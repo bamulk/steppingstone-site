@@ -1,44 +1,59 @@
 import { NextResponse } from "next/server";
+import { siteConfig } from "@/site.config";
 
 type Payload = Record<string, unknown>;
 
-async function sendToAirtable(payload: Payload) {
-  const apiKey = process.env.AIRTABLE_API_KEY;
-  const baseId = process.env.AIRTABLE_BASE_ID;
-  const tableName = process.env.AIRTABLE_TABLE_NAME || "Leads";
+const text = (v: unknown) => String(v ?? "").trim().slice(0, 2000);
 
-  if (!apiKey || !baseId) return { sent: false, reason: "Airtable env vars not set" };
+const escapeHtml = (s: string) =>
+  s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
-  const url = `https://api.airtable.com/v0/${baseId}/${encodeURIComponent(tableName)}`;
+// Emails each application to the house. Uses Resend's HTTP API.
+async function sendEmail(payload: Payload) {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) return { sent: false, reason: "RESEND_API_KEY is not set" };
 
-  // Map payload into Airtable fields. Customize as needed.
-  const fields: Record<string, any> = {
-    Name: payload.name ?? "",
-    Phone: payload.phone ?? "",
-    Email: payload.email ?? "",
-    "Move-in Date": payload.moveIn ?? "",
-    "Preferred Location": payload.location ?? "",
-    "Sobriety Date": payload.sobrietyDate ?? "",
-    "Income Source": payload.income ?? "",
-    "Emergency Contact": payload.emergency ?? "",
-    Notes: payload.notes ?? "",
-    Source: "Website Apply Form",
+  const to = process.env.APPLY_TO_EMAIL || siteConfig.email;
+  const from = process.env.APPLY_FROM_EMAIL || "Stepping Stone website <onboarding@resend.dev>";
+
+  const rows: [string, string][] = [
+    ["Name", text(payload.name)],
+    ["Phone", text(payload.phone)],
+    ["Email", text(payload.email)],
+    ["House", text(payload.location) || "Not sure yet"],
+    ["Move-in date", text(payload.moveIn)],
+    ["Sobriety date", text(payload.sobrietyDate)],
+    ["How she'll cover rent", text(payload.income)],
+    ["Emergency contact", text(payload.emergency)],
+    ["Notes", text(payload.notes)],
+  ];
+  const filled = rows.filter(([, v]) => v);
+
+  const applicantEmail = text(payload.email);
+  const body = {
+    from,
+    to: [to],
+    subject: `New application: ${text(payload.name)}`,
+    ...(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(applicantEmail) ? { reply_to: applicantEmail } : {}),
+    text: filled.map(([k, v]) => `${k}: ${v}`).join("\n") + "\n\nSent from the Apply form on the Stepping Stone website.",
+    html:
+      `<h2>New application from the website</h2><table cellpadding="6" style="border-collapse:collapse">` +
+      filled
+        .map(
+          ([k, v]) =>
+            `<tr><td style="vertical-align:top;color:#505a6c"><strong>${escapeHtml(k)}</strong></td><td>${escapeHtml(v).replace(/\n/g, "<br>")}</td></tr>`
+        )
+        .join("") +
+      `</table>`,
   };
 
-  const res = await fetch(url, {
+  const res = await fetch("https://api.resend.com/emails", {
     method: "POST",
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ records: [{ fields }] }),
+    headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
+    body: JSON.stringify(body),
   });
 
-  if (!res.ok) {
-    const text = await res.text();
-    throw new Error(`Airtable error: ${text}`);
-  }
-
+  if (!res.ok) throw new Error(`Email error ${res.status}: ${await res.text()}`);
   return { sent: true };
 }
 
@@ -55,25 +70,25 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: true });
   }
 
-  const name = String(payload.name ?? "").trim();
-  const phoneDigits = String(payload.phone ?? "").replace(/\D/g, "");
+  const name = text(payload.name);
+  const phoneDigits = text(payload.phone).replace(/\D/g, "");
   if (!name || phoneDigits.length < 10) {
     return new NextResponse("Name and a 10-digit phone number are required", { status: 400 });
   }
 
-  // Always log (useful if Airtable isn't configured yet)
-  console.log("New lead submission:", payload);
-
   try {
-    const airtable = await sendToAirtable(payload);
+    const email = await sendEmail(payload);
     // Never tell an applicant we have her application when it reached nobody.
-    if (!airtable.sent && process.env.NODE_ENV === "production") {
-      console.error("Lead not delivered:", airtable.reason);
-      return new NextResponse("Submission could not be delivered", { status: 503 });
+    if (!email.sent) {
+      if (process.env.NODE_ENV === "production") {
+        console.error("Application not delivered:", email.reason);
+        return new NextResponse("Submission could not be delivered", { status: 503 });
+      }
+      console.log("Application (email not configured, development only):", payload);
     }
-    return NextResponse.json({ ok: true, airtable });
-  } catch (err: any) {
-    console.error("Lead submission failed:", err);
+    return NextResponse.json({ ok: true, sent: email.sent });
+  } catch (err) {
+    console.error("Application email failed:", err);
     return new NextResponse("Submission failed", { status: 500 });
   }
 }

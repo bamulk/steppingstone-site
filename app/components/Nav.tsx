@@ -7,13 +7,14 @@ import { siteConfig } from "@/site.config";
 
 const links = [
   { href: "/homes", label: "The houses" },
+  { href: "/gallery", label: "Gallery" },
   { href: "/pricing", label: "Cost & expectations" },
   { href: "/about", label: "About us" },
   { href: "/resources", label: "Resources" },
   { href: "/apply", label: "Apply" },
 ];
 
-export function Nav() {
+export function Nav({ showGallery = false }: { showGallery?: boolean }) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
@@ -42,7 +43,9 @@ export function Nav() {
         {open ? "Close" : "Menu"}
       </button>
       <ul id="nav-list" className="nav-list" data-open={open}>
-        {links.map((l) => (
+        {links
+          .filter((l) => l.href !== "/gallery" || showGallery)
+          .map((l) => (
           <li key={l.href}>
             <Link className="nav-link" href={l.href} aria-current={pathname === l.href ? "page" : undefined}>
               {l.label}
