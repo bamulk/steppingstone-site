@@ -1,0 +1,9 @@
+{
+  "name": "Stepping Stone Sober Living",
+  "short_name": "Stepping Stone",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbf8f1",
+  "theme_color": "#152347",
+  "icons": []
+}

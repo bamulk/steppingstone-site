@@ -1,0 +1,569 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-08T15:22:37+00:00",
+  "title": "Design System: Stepping Stone Sober Living",
+  "extensions": {
+    "colorMeta": {
+      "navy": {
+        "role": "primary",
+        "displayName": "Deep Navy",
+        "canonical": "#13203b",
+        "tonalRamp": [
+          "oklch(15% 0.055 263.5)",
+          "oklch(27% 0.055 263.5)",
+          "oklch(39% 0.055 263.5)",
+          "oklch(51% 0.055 263.5)",
+          "oklch(63% 0.055 263.5)",
+          "oklch(75% 0.055 263.5)",
+          "oklch(87% 0.055 263.5)",
+          "oklch(95% 0.055 263.5)"
+        ]
+      },
+      "navy-soft": {
+        "role": "primary",
+        "displayName": "Slate Navy",
+        "canonical": "#22335a",
+        "tonalRamp": [
+          "oklch(15% 0.073 264.9)",
+          "oklch(27% 0.073 264.9)",
+          "oklch(39% 0.073 264.9)",
+          "oklch(51% 0.073 264.9)",
+          "oklch(63% 0.073 264.9)",
+          "oklch(75% 0.073 264.9)",
+          "oklch(87% 0.073 264.9)",
+          "oklch(95% 0.073 264.9)"
+        ]
+      },
+      "navy-deep": {
+        "role": "primary",
+        "displayName": "Midnight Navy",
+        "canonical": "#0c152a",
+        "tonalRamp": [
+          "oklch(15% 0.044 265.1)",
+          "oklch(27% 0.044 265.1)",
+          "oklch(39% 0.044 265.1)",
+          "oklch(51% 0.044 265.1)",
+          "oklch(63% 0.044 265.1)",
+          "oklch(75% 0.044 265.1)",
+          "oklch(87% 0.044 265.1)",
+          "oklch(95% 0.044 265.1)"
+        ]
+      },
+      "accent-deep": {
+        "role": "secondary",
+        "displayName": "Clay",
+        "canonical": "#b4532f",
+        "tonalRamp": [
+          "oklch(15% 0.136 40.2)",
+          "oklch(27% 0.136 40.2)",
+          "oklch(39% 0.136 40.2)",
+          "oklch(51% 0.136 40.2)",
+          "oklch(63% 0.136 40.2)",
+          "oklch(75% 0.136 40.2)",
+          "oklch(87% 0.136 40.2)",
+          "oklch(95% 0.136 40.2)"
+        ]
+      },
+      "accent-hover": {
+        "role": "secondary",
+        "displayName": "Clay Dark",
+        "canonical": "#9c4526",
+        "tonalRamp": [
+          "oklch(15% 0.125 39.5)",
+          "oklch(27% 0.125 39.5)",
+          "oklch(39% 0.125 39.5)",
+          "oklch(51% 0.125 39.5)",
+          "oklch(63% 0.125 39.5)",
+          "oklch(75% 0.125 39.5)",
+          "oklch(87% 0.125 39.5)",
+          "oklch(95% 0.125 39.5)"
+        ]
+      },
+      "accent": {
+        "role": "secondary",
+        "displayName": "Pale Clay",
+        "canonical": "#f2ad92",
+        "tonalRamp": [
+          "oklch(15% 0.090 42.3)",
+          "oklch(27% 0.090 42.3)",
+          "oklch(39% 0.090 42.3)",
+          "oklch(51% 0.090 42.3)",
+          "oklch(63% 0.090 42.3)",
+          "oklch(75% 0.090 42.3)",
+          "oklch(87% 0.090 42.3)",
+          "oklch(95% 0.090 42.3)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(27% 0 0)",
+          "oklch(39% 0 0)",
+          "oklch(51% 0 0)",
+          "oklch(63% 0 0)",
+          "oklch(75% 0 0)",
+          "oklch(87% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "tint": {
+        "role": "neutral",
+        "displayName": "Tint",
+        "canonical": "#f4f6fa",
+        "tonalRamp": [
+          "oklch(15% 0.006 264.5)",
+          "oklch(27% 0.006 264.5)",
+          "oklch(39% 0.006 264.5)",
+          "oklch(51% 0.006 264.5)",
+          "oklch(63% 0.006 264.5)",
+          "oklch(75% 0.006 264.5)",
+          "oklch(87% 0.006 264.5)",
+          "oklch(95% 0.006 264.5)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#18202f",
+        "tonalRamp": [
+          "oklch(15% 0.031 262.6)",
+          "oklch(27% 0.031 262.6)",
+          "oklch(39% 0.031 262.6)",
+          "oklch(51% 0.031 262.6)",
+          "oklch(63% 0.031 262.6)",
+          "oklch(75% 0.031 262.6)",
+          "oklch(87% 0.031 262.6)",
+          "oklch(95% 0.031 262.6)"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "#505a6c",
+        "tonalRamp": [
+          "oklch(15% 0.032 262.2)",
+          "oklch(27% 0.032 262.2)",
+          "oklch(39% 0.032 262.2)",
+          "oklch(51% 0.032 262.2)",
+          "oklch(63% 0.032 262.2)",
+          "oklch(75% 0.032 262.2)",
+          "oklch(87% 0.032 262.2)",
+          "oklch(95% 0.032 262.2)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#e2e6ed",
+        "tonalRamp": [
+          "oklch(15% 0.010 261.8)",
+          "oklch(27% 0.010 261.8)",
+          "oklch(39% 0.010 261.8)",
+          "oklch(51% 0.010 261.8)",
+          "oklch(63% 0.010 261.8)",
+          "oklch(75% 0.010 261.8)",
+          "oklch(87% 0.010 261.8)",
+          "oklch(95% 0.010 261.8)"
+        ]
+      },
+      "rule-strong": {
+        "role": "neutral",
+        "displayName": "Strong Hairline",
+        "canonical": "#c9d0dc",
+        "tonalRamp": [
+          "oklch(15% 0.018 261.3)",
+          "oklch(27% 0.018 261.3)",
+          "oklch(39% 0.018 261.3)",
+          "oklch(51% 0.018 261.3)",
+          "oklch(63% 0.018 261.3)",
+          "oklch(75% 0.018 261.3)",
+          "oklch(87% 0.018 261.3)",
+          "oklch(95% 0.018 261.3)"
+        ]
+      },
+      "on-dark": {
+        "role": "neutral",
+        "displayName": "White on Navy",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(27% 0 0)",
+          "oklch(39% 0 0)",
+          "oklch(51% 0 0)",
+          "oklch(63% 0 0)",
+          "oklch(75% 0 0)",
+          "oklch(87% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "on-dark-2": {
+        "role": "neutral",
+        "displayName": "Mist on Navy",
+        "canonical": "#c3cbdb",
+        "tonalRamp": [
+          "oklch(15% 0.024 264.4)",
+          "oklch(27% 0.024 264.4)",
+          "oklch(39% 0.024 264.4)",
+          "oklch(51% 0.024 264.4)",
+          "oklch(63% 0.024 264.4)",
+          "oklch(75% 0.024 264.4)",
+          "oklch(87% 0.024 264.4)",
+          "oklch(95% 0.024 264.4)"
+        ]
+      },
+      "error": {
+        "role": "neutral",
+        "displayName": "Error",
+        "canonical": "#a12a2a",
+        "tonalRamp": [
+          "oklch(15% 0.156 25.4)",
+          "oklch(27% 0.156 25.4)",
+          "oklch(39% 0.156 25.4)",
+          "oklch(51% 0.156 25.4)",
+          "oklch(63% 0.156 25.4)",
+          "oklch(75% 0.156 25.4)",
+          "oklch(87% 0.156 25.4)",
+          "oklch(95% 0.156 25.4)"
+        ]
+      },
+      "field-border": {
+        "role": "neutral",
+        "displayName": "Field Border",
+        "canonical": "#8a93a3",
+        "tonalRamp": [
+          "oklch(15% 0.026 262.1)",
+          "oklch(27% 0.026 262.1)",
+          "oklch(39% 0.026 262.1)",
+          "oklch(51% 0.026 262.1)",
+          "oklch(63% 0.026 262.1)",
+          "oklch(75% 0.026 262.1)",
+          "oklch(87% 0.026 262.1)",
+          "oklch(95% 0.026 262.1)"
+        ]
+      },
+      "field-placeholder": {
+        "role": "neutral",
+        "displayName": "Placeholder",
+        "canonical": "#667085",
+        "tonalRamp": [
+          "oklch(15% 0.035 265.1)",
+          "oklch(27% 0.035 265.1)",
+          "oklch(39% 0.035 265.1)",
+          "oklch(51% 0.035 265.1)",
+          "oklch(63% 0.035 265.1)",
+          "oklch(75% 0.035 265.1)",
+          "oklch(87% 0.035 265.1)",
+          "oklch(95% 0.035 265.1)"
+        ]
+      },
+      "alert-ground": {
+        "role": "neutral",
+        "displayName": "Alert Ground",
+        "canonical": "#fdf2f1",
+        "tonalRamp": [
+          "oklch(15% 0.012 23.7)",
+          "oklch(27% 0.012 23.7)",
+          "oklch(39% 0.012 23.7)",
+          "oklch(51% 0.012 23.7)",
+          "oklch(63% 0.012 23.7)",
+          "oklch(75% 0.012 23.7)",
+          "oklch(87% 0.012 23.7)",
+          "oklch(95% 0.012 23.7)"
+        ]
+      },
+      "alert-ink": {
+        "role": "neutral",
+        "displayName": "Alert Ink",
+        "canonical": "#751d1d",
+        "tonalRamp": [
+          "oklch(15% 0.122 25.2)",
+          "oklch(27% 0.122 25.2)",
+          "oklch(39% 0.122 25.2)",
+          "oklch(51% 0.122 25.2)",
+          "oklch(63% 0.122 25.2)",
+          "oklch(75% 0.122 25.2)",
+          "oklch(87% 0.122 25.2)",
+          "oklch(95% 0.122 25.2)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The one heading that opens a page; reduced for the closing band heading."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "The heading of a band or of one side of a split."
+      },
+      "house-name": {
+        "displayName": "House Name",
+        "purpose": "The name on a house card."
+      },
+      "subtitle": {
+        "displayName": "Subtitle",
+        "purpose": "The heading of a step, a panel, or the lesser side of a split."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "The monthly rate, in lining tabular numerals, right aligned."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "The paragraph under a Display or Title; Soft Ink, max 58ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text, max 68ch in prose."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Button text; text links, form labels and the phone number share the weight."
+      },
+      "quiet": {
+        "displayName": "Quiet",
+        "purpose": "Fine print, disclaimers and supporting lines in Soft Ink."
+      }
+    },
+    "shadows": [
+      {
+        "name": "open-menu",
+        "value": "0 18px 30px -20px rgba(19, 32, 59, 0.35)",
+        "purpose": "Beneath the open mobile menu panel. Functional, not decorative."
+      },
+      {
+        "name": "action-bar",
+        "value": "0 -10px 24px -18px rgba(19, 32, 59, 0.4)",
+        "purpose": "Above the fixed mobile action bar. Functional, not decorative."
+      }
+    ],
+    "motion": [
+      {
+        "name": "colour-change",
+        "value": "background-color 0.18s, border-color 0.18s, color 0.18s",
+        "purpose": "Buttons, nav links, jump links and field borders change colour between states."
+      },
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Decelerating curve for the arrow nudge and the FAQ chevron."
+      },
+      {
+        "name": "arrow-nudge",
+        "value": "transform 0.25s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "An arrow icon slides 3px (buttons) or 4px (text links) to the right on hover."
+      },
+      {
+        "name": "chevron-turn",
+        "value": "transform 0.25s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The FAQ chevron turns over when a question opens."
+      },
+      {
+        "name": "photo-dim",
+        "value": "opacity 0.2s",
+        "purpose": "A hero house photo dims to 90% on hover."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "scroll-behavior auto; all transitions none",
+        "purpose": "All content is visible and usable without motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "checklist-one-column",
+        "value": "480px"
+      },
+      {
+        "name": "form-stack",
+        "value": "560px"
+      },
+      {
+        "name": "cards-stack",
+        "value": "760px"
+      },
+      {
+        "name": "hero-stack-and-action-bar",
+        "value": "860px"
+      },
+      {
+        "name": "apply-aside-stack",
+        "value": "900px"
+      },
+      {
+        "name": "closing-stack",
+        "value": "980px"
+      },
+      {
+        "name": "nav-collapse",
+        "value": "1180px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Solid navy button: the header Call button, the lead of a contact group, the form submit.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Call (916) 335-4203</a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 12px 24px; border: 1px solid transparent; border-radius: var(--radius-sm, 8px); font-family: var(--font-body, Inter), system-ui, sans-serif; font-size: 1.0625rem; font-weight: 600; line-height: 1.2; text-decoration: none; cursor: pointer; transition: background-color 0.18s, border-color 0.18s, color 0.18s; background: var(--navy, #13203b); color: var(--white, #ffffff); } .ds-btn-primary:hover { background: var(--navy-soft, #22335a); } .ds-btn-primary:focus-visible { outline: 3px solid var(--navy, #13203b); outline-offset: 3px; }"
+    },
+    {
+      "name": "Accent Button",
+      "kind": "button",
+      "refersTo": "button-accent",
+      "description": "Clay button, one per view at most: Apply for a bed in the hero, Call in the mobile action bar.",
+      "html": "<a class=\"ds-btn-accent\" href=\"#\">Apply for a bed <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-btn-accent { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 12px 24px; border: 1px solid transparent; border-radius: var(--radius-sm, 8px); font-family: var(--font-body, Inter), system-ui, sans-serif; font-size: 1.0625rem; font-weight: 600; line-height: 1.2; text-decoration: none; cursor: pointer; transition: background-color 0.18s, border-color 0.18s, color 0.18s; background: var(--accent-deep, #b4532f); color: var(--white, #ffffff); } .ds-btn-accent:hover { background: var(--accent-hover, #9c4526); } .ds-btn-accent svg { transition: transform 0.25s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-btn-accent:hover svg { transform: translateX(3px); } .ds-btn-accent:focus-visible { outline: 3px solid var(--navy, #13203b); outline-offset: 3px; }"
+    },
+    {
+      "name": "Plain Button",
+      "kind": "button",
+      "refersTo": "button-plain",
+      "description": "White outlined button that follows the lead: Text us, Apply online.",
+      "html": "<a class=\"ds-btn-plain\" href=\"#\">Text us</a>",
+      "css": ".ds-btn-plain { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 12px 24px; border: 1px solid transparent; border-radius: var(--radius-sm, 8px); font-family: var(--font-body, Inter), system-ui, sans-serif; font-size: 1.0625rem; font-weight: 600; line-height: 1.2; text-decoration: none; cursor: pointer; transition: background-color 0.18s, border-color 0.18s, color 0.18s; background: var(--white, #ffffff); border-color: var(--rule-strong, #c9d0dc); color: var(--navy, #13203b); } .ds-btn-plain:hover { border-color: var(--navy, #13203b); } .ds-btn-plain:focus-visible { outline: 3px solid var(--navy, #13203b); outline-offset: 3px; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "White header row: quiet text links with a tint ground on hover and for the current page, and a small navy Call button.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-link\" href=\"#\" aria-current=\"page\">The houses</a><a class=\"ds-nav-link\" href=\"#\">Cost &amp; expectations</a><a class=\"ds-nav-link\" href=\"#\">About us</a><a class=\"ds-nav-link\" href=\"#\">Resources</a><a class=\"ds-nav-link\" href=\"#\">Apply</a><a class=\"ds-nav-call\" href=\"#\">Call (916) 335-4203</a></nav>",
+      "css": ".ds-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 2px; min-height: 72px; padding: 0 24px; background: var(--white, #ffffff); border-bottom: 1px solid var(--rule, #e2e6ed); font-family: var(--font-body, Inter), system-ui, sans-serif; } .ds-nav-link { display: block; padding: 10px 12px; white-space: nowrap; font-size: 0.98rem; font-weight: 500; color: var(--ink-2, #505a6c); text-decoration: none; border-radius: var(--radius-sm, 8px); transition: color 0.18s, background-color 0.18s; } .ds-nav-link:hover { color: var(--navy, #13203b); background: var(--tint, #f4f6fa); } .ds-nav-link[aria-current=\"page\"] { color: var(--navy, #13203b); font-weight: 600; background: var(--tint, #f4f6fa); } .ds-nav-call { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; margin-left: 20px; padding: 8px 18px; border-radius: var(--radius-sm, 8px); background: var(--navy, #13203b); color: var(--white, #ffffff); font-size: 1.0625rem; font-weight: 600; line-height: 1.2; text-decoration: none; transition: background-color 0.18s; } .ds-nav-call:hover { background: var(--navy-soft, #22335a); } .ds-nav a:focus-visible { outline: 3px solid var(--navy, #13203b); outline-offset: 3px; }"
+    },
+    {
+      "name": "House Card",
+      "kind": "card",
+      "refersTo": "house-card",
+      "description": "The signature card: photo flush at the top, house name, a tint tag, summary, a clay dot list and an Apply text link.",
+      "html": "<div class=\"ds-house-band\"><article class=\"ds-house\"><svg class=\"ds-house-photo\" viewBox=\"0 0 500 300\" role=\"img\" aria-label=\"House photo placeholder\"><rect width=\"500\" height=\"300\" fill=\"#c9d0dc\"/></svg><div class=\"ds-house-body\"><h3 class=\"ds-house-name\">Rio Linda</h3><p class=\"ds-house-who\">For women and their children</p><p class=\"ds-house-summary\">Country living on three acres, with a pool, farm animals, and plenty of room to be outside.</p><ul class=\"ds-house-details\"><li>Three acres, a pool, and farm animals</li><li>Close to shopping and meetings</li></ul><a class=\"ds-house-link\" href=\"#\">Apply for Rio Linda <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a></div></article></div>",
+      "css": ".ds-house-band { padding: 28px; background: var(--tint, #f4f6fa); } .ds-house { display: flex; flex-direction: column; overflow: hidden; max-width: 500px; border: 1px solid var(--rule, #e2e6ed); border-radius: var(--radius, 12px); background: var(--white, #ffffff); color: var(--ink, #18202f); font-family: var(--font-body, Inter), system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; } .ds-house-photo { display: block; width: 100%; aspect-ratio: 500 / 300; } .ds-house-body { display: flex; flex-direction: column; padding: clamp(20px, 2.6vw, 30px); } .ds-house-name { margin: 0; font-family: var(--font-display, Manrope), system-ui, sans-serif; font-size: clamp(1.3rem, 1.15rem + 0.6vw, 1.55rem); font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; color: var(--navy, #13203b); } .ds-house-who { align-self: flex-start; margin: 10px 0 0; padding: 4px 10px; border-radius: 6px; background: var(--tint, #f4f6fa); font-size: 0.88rem; font-weight: 600; color: var(--navy, #13203b); } .ds-house-summary { margin: 14px 0 0; color: var(--ink-2, #505a6c); } .ds-house-details { display: grid; gap: 6px; margin: 16px 0 0; padding: 16px 0 0; list-style: none; border-top: 1px solid var(--rule, #e2e6ed); font-size: 0.98rem; } .ds-house-details li { position: relative; padding-left: 18px; } .ds-house-details li::before { content: \"\"; position: absolute; left: 0; top: 0.62em; width: 6px; height: 6px; border-radius: 50%; background: var(--accent-deep, #b4532f); } .ds-house-link { display: inline-flex; align-items: center; gap: 8px; padding-top: 22px; font-weight: 600; color: var(--navy, #13203b); text-decoration: none; } .ds-house-link:hover { text-decoration: underline; } .ds-house-link svg { transition: transform 0.25s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-house-link:hover svg { transform: translateX(4px); } .ds-house-link:focus-visible { outline: 3px solid var(--navy, #13203b); outline-offset: 3px; }"
+    },
+    {
+      "name": "Rates",
+      "kind": "card",
+      "refersTo": "rate-row",
+      "description": "Each rate is its own white card: room type at left, the figure at right with its qualifier beneath.",
+      "html": "<dl class=\"ds-rates\"><div><dt>Shared room</dt><dd>$750<small>a month and up</small></dd></div><div><dt>Private room</dt><dd>$950<small>a month and up</small></dd></div></dl>",
+      "css": ".ds-rates { display: grid; gap: 12px; max-width: 460px; margin: 0; color: var(--ink, #18202f); font-family: var(--font-body, Inter), system-ui, sans-serif; font-size: 1.0625rem; } .ds-rates > div { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 22px; border: 1px solid var(--rule, #e2e6ed); border-radius: var(--radius, 12px); background: var(--white, #ffffff); } .ds-rates dt { font-weight: 600; } .ds-rates dd { margin: 0; font-family: var(--font-display, Manrope), system-ui, sans-serif; font-weight: 800; font-size: clamp(1.8rem, 1.5rem + 1.2vw, 2.3rem); line-height: 1; letter-spacing: -0.03em; color: var(--navy, #13203b); font-variant-numeric: lining-nums tabular-nums; text-align: right; } .ds-rates small { display: block; margin-top: 6px; font-family: var(--font-body, Inter), system-ui, sans-serif; font-size: 0.875rem; font-weight: 400; letter-spacing: 0; color: var(--ink-2, #505a6c); }"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "White field with a semibold label above; hover and focus turn the border navy, focus adds a navy outline.",
+      "html": "<div class=\"ds-fieldset\"><label for=\"ds-email\">Email <span class=\"ds-hint\">(optional)</span></label><input id=\"ds-email\" type=\"email\" placeholder=\"you@example.com\"></div>",
+      "css": ".ds-fieldset { display: grid; gap: 6px; max-width: 360px; color: var(--ink, #18202f); font-family: var(--font-body, Inter), system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; } .ds-fieldset label { font-weight: 600; } .ds-hint { font-weight: 400; color: var(--ink-2, #505a6c); } .ds-fieldset input { width: 100%; min-height: 50px; padding: 12px 14px; border: 1px solid #8a93a3; border-radius: var(--radius-sm, 8px); background: var(--white, #ffffff); color: var(--ink, #18202f); font: inherit; caret-color: var(--navy, #13203b); transition: border-color 0.18s; } .ds-fieldset input::placeholder { color: #667085; } .ds-fieldset input:hover { border-color: var(--navy, #13203b); } .ds-fieldset input:focus-visible { outline: 3px solid var(--navy, #13203b); outline-offset: 1px; border-color: var(--navy, #13203b); }"
+    },
+    {
+      "name": "Steps",
+      "kind": "custom",
+      "description": "Numbered steps under a two-pixel navy rule, each with a clay step label, a subtitle and a soft ink line.",
+      "html": "<ol class=\"ds-steps\"><li><h3>Reach out</h3><p>Call, text, or send the online application.</p></li><li><h3>We talk it through</h3><p>We go over what is open, the cost, and what we ask of everyone.</p></li><li><h3>Pick a house and move in</h3><p>The houses are furnished, so you only bring your own things.</p></li></ol>",
+      "css": ".ds-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin: 0; padding: 0; list-style: none; counter-reset: ds-step; color: var(--ink, #18202f); font-family: var(--font-body, Inter), system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; } .ds-steps li { counter-increment: ds-step; padding-top: 20px; border-top: 2px solid var(--navy, #13203b); } .ds-steps li::before { content: \"Step \" counter(ds-step); display: block; margin-bottom: 10px; font-size: 0.9rem; font-weight: 600; color: var(--accent-deep, #b4532f); } .ds-steps h3 { margin: 0; font-family: var(--font-display, Manrope), system-ui, sans-serif; font-size: clamp(1.15rem, 1.05rem + 0.4vw, 1.3rem); font-weight: 700; line-height: 1.25; letter-spacing: -0.015em; color: var(--navy, #13203b); } .ds-steps p { margin: 8px 0 0; max-width: 40ch; color: var(--ink-2, #505a6c); }"
+    },
+    {
+      "name": "Closing Band",
+      "kind": "custom",
+      "refersTo": "closing-band",
+      "description": "The last band on a page: navy, with a white heading, a mist lead, the clay lead button and outlined buttons.",
+      "html": "<section class=\"ds-closing\"><div><h2 class=\"ds-closing-title\">Ready to take the next step?</h2><p class=\"ds-closing-lead\">Calling or texting <a href=\"#\">(916) 335-4203</a> is the quickest way to reach us. Ask anything.</p></div><div class=\"ds-closing-actions\"><a class=\"ds-closing-btn ds-closing-btn--primary\" href=\"#\">Call (916) 335-4203</a><a class=\"ds-closing-btn ds-closing-btn--plain\" href=\"#\">Text us</a><a class=\"ds-closing-btn ds-closing-btn--plain\" href=\"#\">Apply online</a></div></section>",
+      "css": ".ds-closing { display: grid; gap: 28px; padding: 56px 32px; background: var(--navy, #13203b); color: var(--white, #ffffff); font-family: var(--font-body, Inter), system-ui, sans-serif; } .ds-closing-title { margin: 0; font-family: var(--font-display, Manrope), system-ui, sans-serif; font-size: clamp(1.8rem, 1.3rem + 2.2vw, 2.7rem); font-weight: 800; line-height: 1.06; letter-spacing: -0.035em; } .ds-closing-lead { margin: 14px 0 0; max-width: 58ch; font-size: clamp(1.08rem, 1rem + 0.35vw, 1.2rem); line-height: 1.6; color: var(--on-dark-2, #c3cbdb); } .ds-closing-lead a { color: var(--white, #ffffff); font-weight: 600; white-space: nowrap; text-decoration-thickness: 1px; text-underline-offset: 0.2em; } .ds-closing-actions { display: flex; flex-wrap: wrap; gap: 12px; } .ds-closing-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 12px 24px; border: 1px solid transparent; border-radius: var(--radius-sm, 8px); font-family: var(--font-body, Inter), system-ui, sans-serif; font-size: 1.0625rem; font-weight: 600; line-height: 1.2; text-decoration: none; cursor: pointer; transition: background-color 0.18s, border-color 0.18s, color 0.18s; } .ds-closing-btn--primary { background: var(--accent-deep, #b4532f); color: var(--white, #ffffff); } .ds-closing-btn--primary:hover { background: var(--accent-hover, #9c4526); } .ds-closing-btn--plain { background: transparent; border-color: rgba(255, 255, 255, 0.4); color: var(--white, #ffffff); } .ds-closing-btn--plain:hover { border-color: var(--white, #ffffff); } .ds-closing a:focus-visible { outline: 3px solid var(--accent, #f2ad92); outline-offset: 3px; }"
+    },
+    {
+      "name": "Checklist on Navy",
+      "kind": "custom",
+      "refersTo": "band-dark",
+      "description": "Amenity rows with a circled check: pale clay icons and low-opacity white hairlines on the navy band.",
+      "html": "<ul class=\"ds-checklist\"><li><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"m8.5 12.3 2.4 2.4 4.8-5.2\"/></svg> Furnished bedrooms</li><li><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"m8.5 12.3 2.4 2.4 4.8-5.2\"/></svg> Free WiFi</li><li><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"m8.5 12.3 2.4 2.4 4.8-5.2\"/></svg> Free parking</li><li><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"m8.5 12.3 2.4 2.4 4.8-5.2\"/></svg> Washer and dryer</li></ul>",
+      "css": ".ds-checklist { display: grid; grid-template-columns: 1fr 1fr; column-gap: 32px; margin: 0; padding: 28px 32px; list-style: none; background: var(--navy, #13203b); color: var(--on-dark, #ffffff); font-family: var(--font-body, Inter), system-ui, sans-serif; font-size: 1.0625rem; } .ds-checklist li { display: flex; align-items: center; gap: 12px; padding-block: 16px; border-bottom: 1px solid rgba(255, 255, 255, 0.16); font-weight: 600; } .ds-checklist svg { flex: none; color: var(--accent, #f2ad92); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Well-Kept House",
+    "overview": "The site should look the way a well-run home feels when you walk in: clean, bright, in order, with nothing fussy on the walls. The owner's direction is to \"improve usability and make the look very modern and clean\" and \"to convey professionality\". A woman leaving treatment, or the relative searching for her, should see at once that this is a real and competently run place, what the four houses are, what a room costs, what is asked of her, and how to reach a person.\n\nThe system is a white page with light grey-blue alternate bands, deep navy for headings and solid surfaces, and one clay accent that appears only in small amounts. Headings are tight, heavy Manrope; everything read at length or pressed is Inter. Surfaces are white cards with a hairline border and a modest radius; rows inside a list are divided by the same hairline. The page is flat. Movement is limited to colour changes and a small nudge of an arrow.\n\nIt replaces four looks the owner rejected in turn: a soft handwritten pastel version, a square ruled serif version, a navy-and-gold version close to nchapterliving.com, and a navy-and-clay serif version. None of their devices return.",
+    "keyCharacteristics": [
+      "Navy on white, with a light grey-blue tint for alternate bands and solid navy for one mid-page band, the closing band and the footer",
+      "A clay accent kept to the lead button of a group, list dots, step labels and check icons",
+      "Manrope at 700 and 800 for headings and figures, set tight; Inter for everything else",
+      "Small radii only: 12px on cards and photos, 8px on buttons, fields and nav links",
+      "One-pixel hairlines for card borders and row dividers; no decorative shadows, gradients or textures",
+      "Photographs level, cover-fitted, clipped to the card radius",
+      "Calling, texting and applying are always in reach: a Call button in the header, a three-button bar fixed to the bottom on small screens, and a navy closing band on every page but the application"
+    ],
+    "rules": [
+      {
+        "name": "The Sparing Clay Rule",
+        "body": "Clay is punctuation. It fills at most one button in a group, and otherwise appears only as a list dot, a step label or a small icon. It is never a band, a card ground, a heading colour or a border.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Clays Rule",
+        "body": "Clay (`accent-deep`) is for light grounds; Pale Clay (`accent`) is for navy grounds. They do not swap: Pale Clay fails contrast on white, and Clay text on navy is only 3.3:1.",
+        "section": "colors"
+      },
+      {
+        "name": "The Three Grounds Rule",
+        "body": "A band is White, Tint or Deep Navy. Midnight Navy is the footer alone. No other field colours exist.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Faces Rule",
+        "body": "Manrope sets headings, house names and rates, always at 700 or 800 and always tight. Inter sets everything a reader scans or presses. Emphasis inside text is Inter 600 or 700 in the same colour.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Colour Heading Rule",
+        "body": "A heading is one face, one weight and one colour from first word to last. No italic, script or accent-coloured words inside it.",
+        "section": "typography"
+      },
+      {
+        "name": "The 500 Pixel Rule",
+        "body": "The house photos are 500 by 326 pixels. A photo should not be displayed much wider than 500px, never full-bleed, and never as a background behind text. In the hero grid each photo is about 235px wide and well inside the rule. The house card does not yet obey it: the photo fills the card, which reaches about 564px on a wide screen and about 680px in a single column just under 760px. That is an open defect in the build, not a size to copy; a new surface caps the photo at 500px.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Page Rule",
+        "body": "A shadow appears only where interface genuinely covers the page: the open mobile menu and the fixed action bar. Cards, photos, buttons and bands never cast one.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Card or Row Rule",
+        "body": "A self-contained thing (a house, a letter, a rate, a resource, the application form) is a White card with a Hairline border and a 12px radius. A list of like facts is a set of rows divided by Hairlines. Do not box each row, and do not nest a card in a card.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do keep calling and texting one tap away on every screen: the header's Call button, a button group near the top of the page, the closing band, and the fixed bar at 860px and below.",
+      "Do set headings, house names and rates in Manrope at 700 or 800 in Deep Navy, and everything else in Inter.",
+      "Do build pages from full-width White and Tint bands, with Deep Navy reserved for one feature band, the closing band and the footer.",
+      "Do keep clay sparing: one clay button in a group at most, plus list dots, step labels and check icons. Use Clay on light grounds and Pale Clay on navy.",
+      "Do use small radii: 12px on cards, panels and photos; 8px on buttons, fields and nav links.",
+      "Do separate with one-pixel hairlines and changes of ground, and keep the page flat.",
+      "Do show house photos level, cover-fitted and clipped to the card, at about 500px wide or less.",
+      "Do use the logo file exactly as supplied, on White. On navy, set the name in Manrope text as the footer does.",
+      "Do keep every interactive target at least 44px tall, 52px for main buttons and 50px for form fields.",
+      "Do write labels in sentence case and name the action or the destination in the button itself."
+    ],
+    "donts": [
+      "Don't use handwriting, script or brush faces anywhere.",
+      "Don't set italic or accent-coloured words inside a heading. A heading is one face, one weight, one colour.",
+      "Don't use gold, as a colour, a rule or a button.",
+      "Don't use pastel section fields. A band is White, the grey-blue Tint or Deep Navy; no peach, blush, sage, lavender or cream grounds.",
+      "Don't tilt, rotate, stack or overlap photographs. Photos sit level and apart.",
+      "Don't round buttons into full pills. Buttons are 8px.",
+      "Don't return to the square, zero-radius, ruled layout: no sharp-cornered boxes, no heavy rules across the top of panels, and no page built only from ruled rows. Hairlines divide rows inside a list; surfaces are rounded cards.",
+      "Don't use drop shadows or glows as decoration. Only the open mobile menu and the fixed action bar cast a shadow.",
+      "Don't closely imitate nchapterliving.com in palette, layout or type.",
+      "Don't redraw, recolour, crop, outline, invert or restyle the logo, and don't place it on navy or over a photo. It is the owner's asset.",
+      "Don't display a house photo much wider than 500px, stretch it full-bleed, or use it as a background behind text.",
+      "Don't use Pale Clay on a light ground or clay as a band, card ground or heading colour.",
+      "Don't animate anything on load, on scroll or on a loop."
+    ]
+  }
+}
