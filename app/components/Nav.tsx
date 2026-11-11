@@ -11,6 +11,7 @@ const links = [
   { href: "/pricing", label: "Cost & expectations" },
   { href: "/about", label: "About us" },
   { href: "/resources", label: "Resources" },
+  { href: "/news", label: "News" },
   { href: "/apply", label: "Apply" },
 ];
 

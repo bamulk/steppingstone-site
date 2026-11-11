@@ -20,6 +20,7 @@ export function Footer() {
               <li><Link href="/pricing">Cost &amp; expectations</Link></li>
               <li><Link href="/about">About us</Link></li>
               <li><Link href="/resources">Resources</Link></li>
+              <li><Link href="/news">News</Link></li>
               <li><Link href="/apply">Apply</Link></li>
             </ul>
           </nav>

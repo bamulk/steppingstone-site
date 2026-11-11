@@ -348,12 +348,13 @@ a {
 .nav-call {
   order: 1;
   margin-left: 12px;
+  white-space: nowrap;
 }
 .nav-toggle {
   display: none;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1260px) {
   .nav-toggle {
     display: inline-flex;
     align-items: center;
@@ -1367,4 +1368,110 @@ a {
   .gallery a:hover .gallery-frame img {
     transform: none;
   }
+}
+
+/* ---------- News ---------- */
+
+.articles {
+  display: grid;
+  gap: clamp(20px, 3vw, 28px);
+  max-width: 920px;
+}
+.article-card {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: clamp(20px, 3vw, 32px);
+  padding: clamp(18px, 2.4vw, 24px);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+.article-card:not(:has(.article-card-image)) {
+  grid-template-columns: 1fr;
+}
+.article-card-image {
+  display: block;
+}
+.article-card-image img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+.article-card .subtitle a {
+  text-decoration: none;
+}
+.article-card .subtitle a:hover {
+  text-decoration: underline;
+}
+.article-date {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--accent-deep);
+}
+.article-excerpt {
+  margin-top: 10px;
+  color: var(--ink-2);
+  max-width: 60ch;
+}
+.article-card .textlink {
+  margin-top: 14px;
+}
+@media (max-width: 640px) {
+  .article-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+.article {
+  padding-block: clamp(40px, 6vw, 80px) var(--space-section);
+}
+.article-wrap {
+  max-width: 720px;
+}
+.article-back {
+  margin-bottom: 28px;
+}
+.article-back a {
+  font-weight: 600;
+  color: var(--navy);
+  text-decoration: none;
+}
+.article-back a::before {
+  content: "← ";
+}
+.article-back a:hover {
+  text-decoration: underline;
+}
+.article-figure {
+  margin-top: 32px;
+  max-width: 440px;
+}
+.article-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
+.article-figure figcaption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: var(--ink-2);
+}
+.article-body {
+  margin-top: 32px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+.article-body p {
+  max-width: 66ch;
+  text-wrap: pretty;
+}
+.article-body p + p {
+  margin-top: 1.1em;
+}
+.article-body .subtitle {
+  margin-top: 1.8em;
+  margin-bottom: 0.5em;
 }
