@@ -28,7 +28,7 @@ Stepping Stone Sober Living runs transitional sober living homes for women in th
 
 ## Operating Context
 
-- Contact happens by phone call, text message, or the online application. Phone: (916) 335-4203. Email: steppingstonesoberliving@gmail.com.
+- Contact happens by phone call, text message, or the online application. Phone: (916) 579-6091. Email: steppingstonesoberliving@gmail.com.
 - The live site at steppingstonesle.com is WordPress + Divi. This repository is a Next.js 14 rebuild that has not been deployed.
 - Application submissions post to `/api/apply`, which emails them to the house via Resend (`RESEND_API_KEY`). Airtable was removed on 2026-10-08 at the owner's request.
 

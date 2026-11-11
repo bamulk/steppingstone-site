@@ -8,7 +8,8 @@ const dir = path.join(process.cwd(), "public", "gallery");
 // "02-rio-linda-pool.jpg" -> "Rio linda pool"; camera names (IMG_1234) get no caption.
 function captionFrom(file: string) {
   const base = file.replace(/\.[^.]+$/, "").replace(/^\d+[-_ ]*/, "");
-  if (!base || /^(img|dsc|pxl|photo|image|screenshot)[-_ ]?\d*/i.test(base) || /^\d+$/.test(base)) return "";
+  // No caption for camera names, ids and anything else that is mostly digits or hex.
+  if (!base || /^(img|dsc|pxl|photo|image|screenshot)[-_ ]?\d*/i.test(base) || /\d{3,}/.test(file) || /[0-9a-f]{8}/i.test(file)) return "";
   const words = base.replace(/[-_]+/g, " ").trim();
   return words.charAt(0).toUpperCase() + words.slice(1);
 }

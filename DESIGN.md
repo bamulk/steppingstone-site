@@ -322,9 +322,9 @@ Calm and exact: generous touch targets, one visual weight per role, state shown 
 
 ### Buttons
 - **Shape:** softly squared (8px radius), minimum 52px tall, 12px by 24px padding, one-pixel border. Label in Inter 600. A trailing arrow icon sits 10px after the label where the button leads onward. Groups wrap with a 12px gap.
-- **Primary:** Deep Navy with White text. The header's "Call (916) 335-4203", the lead button of a contact group, "Apply online", and the form's submit.
+- **Primary:** Deep Navy with White text. The header's "Call (916) 579-6091", the lead button of a contact group, "Apply online", and the form's submit.
 - **Accent:** Clay with White text. One per view at most: "Apply for a bed" in the hero, and "Call" in the mobile action bar.
-- **Plain:** White with Deep Navy text and a Strong Hairline border. Follows the lead button: "Text us", "Apply online", "Call (916) 335-4203" beside the hero's Apply.
+- **Plain:** White with Deep Navy text and a Strong Hairline border. Follows the lead button: "Text us", "Apply online", "Call (916) 579-6091" beside the hero's Apply.
 - **Small:** 44px minimum height, 8px by 18px padding; the header button. In the mobile action bar buttons are 48px with 8px by 10px padding.
 - **On navy:** the lead button becomes Clay with White text; the plain button becomes transparent with White text and a 40% white border.
 - **Hover:** colour only, over 0.18s. Primary goes to Slate Navy; Clay goes to Clay Dark; the plain border goes to Deep Navy (to White on navy). An arrow icon slides 3px to the right over 0.25s.
