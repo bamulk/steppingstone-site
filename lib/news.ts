@@ -1,4 +1,6 @@
-export type Block = { type: "p"; text: string } | { type: "h2"; text: string };
+export type ListItem = { lead?: string; text: string; href?: string };
+
+export type Block = { type: "p"; text: string } | { type: "h2"; text: string } | { type: "ul"; items: ListItem[] };
 
 export type Article = {
   slug: string;
@@ -9,8 +11,119 @@ export type Article = {
   body: Block[];
 };
 
-// Carried over from the previous WordPress site, newest first.
+// Newest first. The two oldest were carried over from the previous WordPress site.
 export const articles: Article[] = [
+  {
+    slug: "staying-steady-through-the-holidays",
+    title: "Staying Steady Through the Holidays: A Gentle Guide for Women in Recovery and Their Families",
+    date: "2026-11-11",
+    excerpt:
+      "The weeks between Thanksgiving and New Year's can be beautiful and hard when you're in recovery. Here are simple ideas for staying steady, for women in recovery and the families who love them.",
+    image: {
+      src: "/images/news/staying-steady-through-the-holidays.png",
+      width: 1200,
+      height: 630,
+      alt: "Illustration of stepping stones across dark water toward a setting sun, with the title Staying Steady Through the Holidays.",
+    },
+    body: [
+      {
+        type: "p",
+        text: "The season between Thanksgiving and New Year's can be one of the most beautiful times of the year. It can also be one of the hardest when you're in recovery. There are parties, family gatherings, old traditions, busy schedules and sometimes old hurts that come back up around the table. If you're feeling a little nervous about the weeks ahead, you're not alone, and there's nothing wrong with you. It just means your recovery matters to you.",
+      },
+      {
+        type: "p",
+        text: "Here are some simple ideas that women in our community, and the families who love them, have found helpful.",
+      },
+      { type: "h2", text: "Make a plan before the plans start" },
+      {
+        type: "p",
+        text: "The holidays have a way of filling up fast. Before the invitations roll in, take a few minutes to think about which events feel safe, which ones feel risky, and which ones you can skip this year. It's okay to say no. It's okay to say yes for an hour and leave early.",
+      },
+      { type: "p", text: "A few things that can help when you do go:" },
+      {
+        type: "ul",
+        items: [
+          { text: "Bring your own drink, so there's always something in your hand." },
+          { text: "Have your own way home, so you can leave whenever you need to." },
+          { text: "Bring a sober friend, or plan a check-in call with your sponsor before and after." },
+          { text: 'Know your "exit line" ahead of time, something simple like "I\'ve got an early morning."' },
+        ],
+      },
+      { type: "h2", text: "Keep your routines close" },
+      {
+        type: "p",
+        text: "When the calendar gets crowded, the things that keep us steady are often the first to slip: meetings, sleep, meals, quiet time, a phone call to someone who gets it. Try to protect them like any other appointment. Many recovery meetings stay open through the holidays, and some groups hold special gatherings on the holidays themselves, so you don't have to spend the day alone. If you're traveling, online and phone meetings can go with you.",
+      },
+      { type: "h2", text: "Give yourself room to feel" },
+      {
+        type: "p",
+        text: "The holidays can bring up grief, loneliness, guilt, or memories of holidays that didn't go well. They can also bring up hope. All of that is normal. Write it down, talk it through, pray, take a walk, or sit with a housemate over a cup of coffee. You don't have to fix every feeling. You only have to get through today without picking up.",
+      },
+      { type: "h2", text: "For families: what helps" },
+      {
+        type: "p",
+        text: "If someone you love is in recovery, your support means more than you may know. A few gentle ways to show it:",
+      },
+      {
+        type: "ul",
+        items: [
+          { text: "Ask ahead of time what would make the gathering easier for her." },
+          { text: "Offer alcohol-free drinks without making a big deal of it." },
+          { text: "Let her leave early without questions or hurt feelings." },
+          { text: "Celebrate the person, not just the milestones." },
+        ],
+      },
+      {
+        type: "p",
+        text: "Families need support too. Al-Anon Family Groups is a Twelve Step fellowship for relatives and friends of people who drink too much, with meetings in person, by phone, online and in its mobile app. Alateen offers the same kind of support for teens ages 13 to 18.",
+      },
+      { type: "h2", text: "If you need help, reach out" },
+      { type: "p", text: "Asking for help is a strength, not a setback. Here are a few free places to start:" },
+      {
+        type: "ul",
+        items: [
+          {
+            lead: "988 Suicide & Crisis Lifeline:",
+            text: "call or text 988, or chat online, any time of day. It's free and confidential, and it helps with mental health and substance use concerns, including when you're worried about someone else.",
+          },
+          {
+            lead: "SAMHSA's National Helpline:",
+            text: "a free, confidential treatment referral and information line for individuals and families facing mental health or substance use challenges, open 24 hours a day, every day of the year, in English and Spanish. Call 1-800-662-HELP (4357).",
+          },
+          {
+            lead: "Sacramento County Behavioral Health Services Screening and Coordination (BHS-SAC):",
+            text: "the county's main entry point for mental health and substance use services, open 24 hours a day, 365 days a year. Family members and friends can call on someone's behalf. Most services require Medi-Cal eligibility. Call (916) 875-1055 or toll-free (888) 881-4881. California Relay: 711.",
+          },
+        ],
+      },
+      { type: "p", text: "If you or someone else is in immediate danger, call 911." },
+      { type: "h2", text: "One day at a time, even in December" },
+      {
+        type: "p",
+        text: "The holidays don't have to be perfect to be good. A quiet dinner, a meeting, a phone call, a good night's sleep: these are real gifts. Wherever you are on your journey this season, we're cheering you on.",
+      },
+      {
+        type: "p",
+        text: "From all of us at Stepping Stone Sober Living, we wish you a peaceful, sober and hopeful holiday season.",
+      },
+      { type: "h2", text: "Sources" },
+      {
+        type: "ul",
+        items: [
+          { text: "SAMHSA, National Helpline", href: "https://www.samhsa.gov/find-help/helplines/national-helpline" },
+          { text: "American Foundation for Suicide Prevention, 988 Suicide & Crisis Lifeline", href: "https://afsp.org/988" },
+          {
+            text: "Sacramento County Department of Health Services, Behavioral Health Services Screening and Coordination (BHS-SAC)",
+            href: "https://dhs.saccounty.gov/us/en/behavioral-health/behavioral-health-services/entry-point/bhs-sac.html",
+          },
+          {
+            text: "Al-Anon Family Groups, Finding a Meeting Is Just a Click Away",
+            href: "https://al-anon.org/blog/finding-a-meeting-is-just-a-click-away/",
+          },
+        ],
+      },
+    ],
+  },
   {
     slug: "recovery-happens-at-the-state-capitol",
     title: "Recovery Happens at the State Capitol",

@@ -41,7 +41,21 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
 
           <div className="article-body">
             {a.body.map((b, i) =>
-              b.type === "h2" ? <h2 key={i} className="subtitle">{b.text}</h2> : <p key={i}>{b.text}</p>
+              b.type === "h2" ? (
+                <h2 key={i} className="subtitle">{b.text}</h2>
+              ) : b.type === "ul" ? (
+                <ul key={i}>
+                  {b.items.map((item, j) => (
+                    <li key={j}>
+                      {item.lead && <strong>{item.lead}</strong>}
+                      {item.lead && " "}
+                      {item.href ? <a href={item.href} target="_blank" rel="noopener noreferrer">{item.text}</a> : item.text}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p key={i}>{b.text}</p>
+              )
             )}
           </div>
         </div>
