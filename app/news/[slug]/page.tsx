@@ -42,7 +42,12 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
 
           <div className="article-body">
             {a.body.map((b, i) =>
-              b.type === "h2" ? (
+              b.type === "img" ? (
+                <figure key={i} className="article-figure">
+                  <Image src={b.src} alt={b.alt} width={b.width} height={b.height} sizes="(max-width: 760px) 92vw, 440px" />
+                  {b.caption && <figcaption>{b.caption}</figcaption>}
+                </figure>
+              ) : b.type === "h2" ? (
                 <h2 key={i} className="subtitle">{b.text}</h2>
               ) : b.type === "ul" ? (
                 <ul key={i}>

@@ -1,6 +1,10 @@
 export type ListItem = { lead?: string; text: string; href?: string };
 
-export type Block = { type: "p"; text: string } | { type: "h2"; text: string } | { type: "ul"; items: ListItem[] };
+export type Block =
+  | { type: "p"; text: string }
+  | { type: "h2"; text: string }
+  | { type: "ul"; items: ListItem[] }
+  | { type: "img"; src: string; width: number; height: number; alt: string; caption?: string };
 
 export type Article = {
   slug: string;
@@ -131,16 +135,23 @@ export const articles: Article[] = [
     excerpt:
       "We spent the day at Recovery Happens at the State Capitol, meeting programs and people from across California who are committed to recovery.",
     image: {
-      src: "/images/news/recovery-happens-capitol.jpg",
+      src: "/images/news/recovery-happens-at-the-state-capitol.webp",
       width: 1200,
-      height: 1600,
-      alt: "Four women from Stepping Stone Sober Living standing behind the Stepping Stone information table under a white event tent.",
-      caption: "Our table at Recovery Happens.",
+      height: 630,
+      alt: "Illustration of stepping stones across a lawn at sunset, leading to a domed capitol building, with the title Recovery Happens at the State Capitol.",
     },
     body: [
       {
         type: "p",
         text: "This past week, we had the opportunity to attend Recovery Happens at the State Capitol, and it was an incredible experience. The event brought together people in recovery, their families, and organizations from all across the state to celebrate the power of sobriety and the strength of community.",
+      },
+      {
+        type: "img",
+        src: "/images/news/recovery-happens-capitol.jpg",
+        width: 1200,
+        height: 1600,
+        alt: "Four women from Stepping Stone Sober Living standing behind the Stepping Stone information table under a white event tent.",
+        caption: "Our table at Recovery Happens.",
       },
       {
         type: "p",
@@ -158,6 +169,12 @@ export const articles: Article[] = [
     date: "2025-08-28",
     excerpt:
       "Recovery doesn't end when treatment does. Here is why a structured, supportive sober living home can make the transition back to everyday life easier.",
+    image: {
+      src: "/images/news/why-choose-sober-living.webp",
+      width: 1200,
+      height: 630,
+      alt: "Illustration of stepping stones across a still lake at dawn, leading to a small home with a lit window, with the title Why Choose Sober Living?",
+    },
     body: [
       {
         type: "p",
