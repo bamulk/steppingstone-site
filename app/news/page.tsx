@@ -1,3 +1,4 @@
+import "./news.css";
 import Image from "next/image";
 import Link from "next/link";
 import { articles, formatDate } from "@/lib/news";

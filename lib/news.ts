@@ -20,7 +20,7 @@ export const articles: Article[] = [
     excerpt:
       "The weeks between Thanksgiving and New Year's can be beautiful and hard when you're in recovery. Here are simple ideas for staying steady, for women in recovery and the families who love them.",
     image: {
-      src: "/images/news/staying-steady-through-the-holidays.png",
+      src: "/images/news/staying-steady-through-the-holidays.webp",
       width: 1200,
       height: 630,
       alt: "Illustration of stepping stones across dark water toward a setting sun, with the title Staying Steady Through the Holidays.",

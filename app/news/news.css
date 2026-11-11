@@ -1,0 +1,21 @@
+/* News article extras: bulleted lists in article bodies, and card
+   thumbnails anchored left so wide header graphics keep their title. */
+.article-card-image img {
+  object-position: left center;
+}
+.article-body ul {
+  max-width: 66ch;
+  margin-block: 0.8em 1.1em;
+  padding-left: 1.3em;
+  list-style: disc;
+}
+.article-body li + li {
+  margin-top: 0.5em;
+}
+.article-body li::marker {
+  color: var(--accent-deep);
+}
+.article-body ul a {
+  color: var(--navy);
+  overflow-wrap: anywhere;
+}
